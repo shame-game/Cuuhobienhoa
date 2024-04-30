@@ -1,0 +1,82 @@
+footer{
+    width: 100%;
+    background-color: var(--yellow);
+}
+
+.Footer-Contact,.Footer-Feedback{
+    margin: 30px 0;
+}
+
+.Footer-Contact h2,.Footer-Feedback h2{
+    font-size: calc(1rem + 2vw);
+    font-family: 'Oswald', sans-serif;
+}
+
+.Footer-Contact ul,.Footer-Feedback p{
+    list-style: none;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.Footer-Contact a{
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.Footer-Contact a:hover{
+    color: var(--black);
+    opacity: 0.8;
+    margin: 10px;
+}
+
+.Footer-img{
+    display: flex;
+    align-items: center;
+}
+
+.Footer-Form{
+    position: relative;
+    width: 100%;
+}
+
+.Footer-Input{
+    padding: 8px 20px;
+    outline: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.Footer-Button{
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer-Button i{
+    width: 100%;
+}
+.Footer-back{
+    background-color: var(--black);
+}
+.Footer-back h3{
+    color: var(--white);
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (max-width: 480px){
+    .Footer-img{
+        display: none;
+    }
+    .footer-g{
+        flex-wrap: wrap;
+    }
+    .Footer-Feedback{
+        margin-bottom: 50px;
+    }
+}

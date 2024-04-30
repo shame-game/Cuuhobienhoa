@@ -1,0 +1,94 @@
+.header{
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+}
+
+header:before{
+    content: "";
+    display: inline-block;
+    width: 25%;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 120px;
+    background: var(--yellow);
+    z-index: 8888;
+}
+.header-main::after{
+    content: "";
+    display: inline-block;
+    width: 10%;
+    left: 200px;
+    top: 0px;
+    position: absolute;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Photo/Logo.png);
+    z-index: 8888;
+}
+.container{
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    padding: 5px 0;
+    align-items: center;
+    position: relative;
+}
+
+.header-input{
+    padding: 0 20px;
+    outline: none;
+    border-radius: 1412px 0 0 1412px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    width: 110px;
+    height: 35px;
+    outline: none;
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in-out;
+    color: var(--black);
+}
+.header-input:focus {
+    width: 300px;
+  }
+
+.header-button{
+    height: 35px;
+    width: 35px;
+    border-radius: 0 1412px 1412px 0;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    border-left: none;
+    position: relative;
+}
+
+.header-button:hover {
+    cursor: pointer;
+}
+
+.container::before{
+    content: "";
+    display: inline-block;
+    background: var(--yellow);
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 8888;
+    clip-path: polygon(0% 0%, 78% 0, 100% 37%, 62% 100%, 0% 100%);
+}
+ 
+@media (max-width: 1200px) {
+    .header-main::after {
+        content: "";
+        display: inline-block;
+        width: 15%;
+        left: 150px;
+    }
+    .container::before {
+        left: -20px;
+    }
+}
